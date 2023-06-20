@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+    * {
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    body{
+        margin: 0;
+    }
+    
+    #top{
+        background-color: rgb(255, 255, 255);
+        height: 10vh;
+    }
+#logo{
+    height: 5vh;
+    margin: 0;
+    padding: 2.5vh 4vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+    }
+    .payment
+{
+position:absolute;
+background-color:#ffffff;
+height:2548px;
+width:1440px;
+padding:0px;
+}
+.purchase
+{
+color:#000000;
+text-align:left;
+vertical-align:text-top;
+font-size:36px;
+font-family:Noto Sans KR;
+line-height:auto;
+border-style:hidden;
+outline:none;
+left:625px;
+top:152px;
+position:absolute;
+width:190px;
+}
+.line1
+{
+width:1055.296142578125px;
+border:1px solid #000000;
+top:302px;
+left:192px;
+position:absolute;
+}
+.line2
+{
+width:1055.296142578125px;
+border:1px solid #000000;
+top:512px;
+left:192px;
+position:absolute;
+}
+.line3
+{
+width:1055.296142578125px;
+border:1px solid #000000;
+top:1086px;
+left:192px;
+position:absolute;
+}
+.line4
+{
+width:1055.296142578125px;
+border:1px solid #000000;
+top:1338px;
+left:192px;
+position:absolute;
+}
+.profile
+{
+color:#000000;
+text-align:left;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:234px;
+top:353px;
+width:918px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.받는분
+{
+color:#000000;
+text-align:left;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:234px;
+top:563px;
+width:918px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.주문자정보
+{
+color:#000000;
+text-align:left;
+vertical-align:text-top;
+font-size:24px;
+font-family:Noto Sans KR;
+left:234px;
+top:250px;
+width:116px;
+height:35px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.배송지정보
+{
+color:#000000;
+text-align:left;
+vertical-align:text-top;
+font-size:24px;
+font-family:Noto Sans KR;
+left:234px;
+top:457px;
+width:116px;
+height:35px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.배송요청사항
+{
+color:#000000;
+text-align:left;
+vertical-align:text-top;
+font-size:24px;
+font-family:Noto Sans KR;
+left:234px;
+top:1027px;
+width:144px;
+height:35px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.결제수단
+{
+color:#000000;
+text-align:left;
+vertical-align:text-top;
+font-size:24px;
+font-family:Noto Sans KR;
+left:234px;
+top:1271px;
+width:89px;
+height:35px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.rectangle22
+{
+background-color:#ffffff;
+height:59px;
+width:419px;
+border-radius:8px;
+border:1px solid #999999;
+top:548px;
+left:354px;
+position:absolute;
+}
+.rectangle30
+{
+background-color:#ffffff;
+height:59px;
+width:389px;
+border-radius:8px;
+border:1px solid #999999;
+top:1122px;
+left:234px;
+position:absolute;
+}
+.주소
+{
+color:#000000;
+text-align:left;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:234px;
+top:658px;
+width:918px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.전화번호
+{
+color:#000000;
+text-align:left;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:234px;
+top:913px;
+width:918px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.slice2
+{
+color:#000000;
+text-align:left;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:490px;
+top:913px;
+width:7px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.slice3
+{
+color:#000000;
+text-align:left;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:644px;
+top:913px;
+width:7px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.rectangle23
+{
+background-color:#ffffff;
+height:59px;
+width:183px;
+border-radius:8px;
+border:1px solid #999999;
+top:643px;
+left:354px;
+position:absolute;
+}
+.rectangle31
+{
+background-color:#ffffff;
+height:59px;
+width:183px;
+border-radius:8px;
+border:1px solid #999999;
+top:643px;
+left:354px;
+position:absolute;
+}
+.rectangle32
+{
+background-color:#636363;
+height:59px;
+width:231px;
+border-radius:8px;
+top:1374px;
+left:234px;
+position:absolute;
+}
+.rectangle46
+{
+background-color:#6b6b6b;
+height:59px;
+width:370px;
+border-radius:12px;
+top:2385px;
+left:535px;
+position:absolute;
+}
+.rectangle33
+{
+background-color:#ffffff;
+height:59px;
+width:230px;
+border-radius:8px;
+border:1px solid #999999;
+top:1374px;
+left:481px;
+position:absolute;
+}
+.rectangle34
+{
+background-color:#ffffff;
+height:59px;
+width:230px;
+border-radius:8px;
+border:1px solid #999999;
+top:1374px;
+left:728px;
+position:absolute;
+}
+.rectangle35
+{
+background-color:#ffffff;
+height:59px;
+width:231px;
+border-radius:8px;
+border:1px solid #999999;
+top:1374px;
+left:974px;
+position:absolute;
+}
+.rectangle36
+{
+background-color:#ffffff;
+height:59px;
+width:231px;
+border-radius:8px;
+border:1px solid #999999;
+top:1455px;
+left:234px;
+position:absolute;
+}
+.rectangle37
+{
+background-color:#ffffff;
+height:59px;
+width:230px;
+border-radius:8px;
+border:1px solid #999999;
+top:1455px;
+left:481px;
+position:absolute;
+}
+.rectangle40
+{
+background-color:#ffffff;
+height:59px;
+width:231px;
+border-radius:8px;
+border:1px solid #999999;
+top:1538px;
+left:234px;
+position:absolute;
+}
+.rectangle42
+{
+background-color:#eeeeee;
+height:100px;
+width:1055px;
+border-radius:7px;
+top:1633px;
+left:192px;
+position:absolute;
+}
+.rectangle43
+{
+background-color:#eeeeee;
+height:206px;
+width:1055px;
+border-radius:7px;
+top:1784px;
+left:192px;
+position:absolute;
+}
+.rectangle41
+{
+background-color:#ffffff;
+height:59px;
+width:230px;
+border-radius:8px;
+border:1px solid #999999;
+top:1538px;
+left:481px;
+position:absolute;
+}
+.rectangle38
+{
+background-color:#ffffff;
+height:59px;
+width:230px;
+border-radius:8px;
+border:1px solid #999999;
+top:1455px;
+left:728px;
+position:absolute;
+}
+.rectangle39
+{
+background-color:#ffffff;
+height:59px;
+width:231px;
+border-radius:8px;
+border:1px solid #999999;
+top:1455px;
+left:974px;
+position:absolute;
+}
+.rectangle27
+{
+background-color:#ffffff;
+height:59px;
+width:125px;
+border-radius:8px;
+border:1px solid #999999;
+top:898px;
+left:354px;
+position:absolute;
+}
+.rectangle28
+{
+background-color:#ffffff;
+height:59px;
+width:125px;
+border-radius:8px;
+border:1px solid #999999;
+top:898px;
+left:508px;
+position:absolute;
+}
+.rectangle29
+{
+background-color:#ffffff;
+height:59px;
+width:125px;
+border-radius:8px;
+border:1px solid #999999;
+top:898px;
+left:662px;
+position:absolute;
+}
+.rectangle25
+{
+background-color:#ffffff;
+height:59px;
+width:694px;
+border-radius:8px;
+border:1px solid #999999;
+top:722px;
+left:354px;
+position:absolute;
+}
+.rectangle26
+{
+background-color:#ffffff;
+height:59px;
+width:694px;
+border-radius:8px;
+border:1px solid #999999;
+top:803px;
+left:354px;
+position:absolute;
+}
+.rectangle44
+{
+background-color:#ffffff;
+height:269px;
+width:1055px;
+border-radius:8px;
+border:1px solid #999999;
+top:2041px;
+left:192px;
+position:absolute;
+}
+.rectangle24
+{
+background-color:#ffffff;
+height:59px;
+width:137px;
+border-radius:8px;
+border:1px solid #ff7b92;
+top:643px;
+left:549px;
+position:absolute;
+}
+.주소찾기
+{
+color:#ff7b92;
+text-align:left;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:581px;
+top:658px;
+width:74px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+#info1
+{
+color:#757575;
+text-align:left;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:221px;
+top:1654px;
+width:753px;
+height:58px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.결제정보
+{
+color:#000000;
+text-align:left;
+vertical-align:text-top;
+font-size:24px;
+font-family:Noto Sans KR;
+left:221px;
+top:2062px;
+width:89px;
+height:35px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.주문금액
+{
+color:#777777;
+text-align:left;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:222px;
+top:2118px;
+width:79px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.총결제예정금액
+{
+color:#000000;
+text-align:left;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:758px;
+top:2065px;
+width:143px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.money1
+{
+color:#2e2e2e;
+text-align:left;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:609px;
+top:2118px;
+width:50px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.원
+{
+color:#757575;
+text-align:left;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:659px;
+top:2118px;
+width:19px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.group3
+{
+width:71px;
+height:29px;
+top:2065px;
+left:1090px;
+position:absolute;
+}
+.money2
+{
+color:#ff7b92;
+text-align:left;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:1090px;
+top:2065px;
+width:52px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.원2
+{
+color:#757575;
+text-align:left;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:1142px;
+top:2065px;
+width:19px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.won5
+{
+color:#2e2e2e;
+text-align:right;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:609px;
+top:2176px;
+width:12px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.won4
+{
+color:#757575;
+text-align:left;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:659px;
+top:2176px;
+width:19px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.won3
+{
+color:#2e2e2e;
+text-align:right;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:609px;
+top:2234px;
+width:50px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.원4
+{
+color:#757575;
+text-align:left;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:659px;
+top:2234px;
+width:19px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.배송비
+{
+color:#777777;
+text-align:left;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:223px;
+top:2176px;
+width:56px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.총할인금액
+{
+color:#777777;
+text-align:left;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:221px;
+top:2234px;
+width:97px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.line5
+{
+width:202px;
+transform:rotate(90deg);
+border:1px solid #000000;
+top: 2170px;
+left:620px;
+position:absolute;
+}
+.rectangle45
+{
+background-color:#ffffff;
+height:59px;
+width:447px;
+border-radius:7px;
+border:1px solid #999999;
+top:2117px;
+left:758px;
+position:absolute;
+}
+.총적립예정포인트
+{
+color:#000000;
+text-align:left;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:781px;
+top:2133px;
+width:166px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.p4
+{
+color:#000000;
+text-align:left;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:1137px;
+top:2133px;
+width:48px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+#info2
+{
+color:#757575;
+text-align:left;
+vertical-align:text-top;
+font-size:15px;
+font-family:Noto Sans KR;
+left:758px;
+top:2223px;
+width:447px;
+height:52px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.결제하기
+{
+color:#ffffff;
+text-align:left;
+vertical-align:text-top;
+font-size:24px;
+font-family:Noto Sans KR;
+left:675px;
+top:2397px;
+width:89px;
+height:35px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.신용카드결제
+{
+color:#ffffff;
+text-align:left;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:292px;
+top:1389px;
+width:115px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.가상계좌결제
+{
+color:#999999;
+text-align:center;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:538px;
+top:1389px;
+width:115px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.페이코
+{
+color:#999999;
+text-align:center;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:321px;
+top:1471px;
+width:56px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.페이코2
+{
+color:#999999;
+text-align:center;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:321px;
+top:1471px;
+width:56px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.배송요청사항선택
+{
+color:#565656;
+text-align:center;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:255px;
+top:1137px;
+width:152px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.엘페이
+{
+color:#999999;
+text-align:center;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:323px;
+top:1553px;
+width:56px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.toss
+{
+color:#999999;
+text-align:center;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:571px;
+top:1553px;
+width:51px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.카카오페이
+{
+color:#999999;
+text-align:center;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:552px;
+top:1471px;
+width:92px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.삼성페이
+{
+color:#999999;
+text-align:center;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:806px;
+top:1470px;
+width:74px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.쓱페이
+{
+color:#999999;
+text-align:center;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:1062px;
+top:1471px;
+width:56px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.실시간계좌이체
+{
+color:#999999;
+text-align:center;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:775px;
+top:1389px;
+width:134px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.휴대폰결제
+{
+color:#999999;
+text-align:center;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:1041px;
+top:1389px;
+width:97px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+.polygon2
+{
+background-color:#9d9d9d;
+height:11px;
+width:24px;
+left:600px;
+top:1160px;
+position:absolute;
+}
+.구매자주문동의
+{
+color:#000000;
+text-align:left;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:750px;
+top:2191px;
+width:138px;
+height:29px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+#info3
+{
+color:#757575;
+text-align:left;
+vertical-align:text-top;
+font-size:20px;
+font-family:Noto Sans KR;
+left:217px;
+top:1799px;
+width:761px;
+height:174px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+}
+
+</style>
+<body>
+    <div id="top">
+        <a href="index.html"><img id="logo" src="img/logo.png"></a>
+    </div>
+
+    <div id='payment' class='payment'>
+        <div id='purchase' class='purchase'>
+        PURCHASE</div>
+        <div id='line1' class='line1'>
+        </div>
+        <div id='line2' class='line2'>
+        </div>
+        <div id='line4' class='line4'>
+        </div>
+        <div id='profile' class='profile'>
+        심지우   |   010-7306-2545   |   jiwoosim@naver.com</div>
+        <div id='받는분' class='받는분'>
+        받는 분</div>
+        <div id='주문자정보' class='주문자정보'>
+        주문자 정보</div>
+        <div id='배송지정보' class='배송지정보'>
+        배송지 정보</div>
+        <div id='배송요청사항' class='배송요청사항'>
+        배송 요청 사항</div>
+        <div id='결제수단' class='결제수단'>
+        결제수단</div>
+        <div id='rectangle22' class='rectangle22'>
+        </div>
+        <div id='rectangle30' class='rectangle30'>
+        </div>
+        <div id='주소' class='주소'>
+        주소</div>
+        <div id='전화번호' class='전화번호'>
+        전화번호</div>
+        <div id='slice2' class='slice2'>
+        -</div>
+        <div id='slice3' class='slice3'>
+        -</div>
+        <div id='rectangle23' class='rectangle23'>
+        </div>
+        <div id='rectangle31' class='rectangle31'>
+        </div>
+        <div id='rectangle32' class='rectangle32'>
+        </div>
+        <div id='rectangle46' class='rectangle46'>
+        </div>
+        <div id='rectangle33' class='rectangle33'>
+        </div>
+        <div id='rectangle34' class='rectangle34'>
+        </div>
+        <div id='rectangle35' class='rectangle35'>
+        </div>
+        <div id='rectangle36' class='rectangle36'>
+        </div>
+        <div id='rectangle37' class='rectangle37'>
+        </div>
+        <div id='rectangle40' class='rectangle40'>
+        </div>
+        <div id='rectangle42' class='rectangle42'>
+        </div>
+        <div id='rectangle43' class='rectangle43'>
+        </div>
+        <div id='rectangle41' class='rectangle41'>
+        </div>
+        <div id='rectangle38' class='rectangle38'>
+        </div>
+        <div id='rectangle39' class='rectangle39'>
+        </div>
+        <div id='rectangle27' class='rectangle27'>
+        </div>
+        <div id='rectangle28' class='rectangle28'>
+        </div>
+        <div id='rectangle29' class='rectangle29'>
+        </div>
+        <div id='rectangle25' class='rectangle25'>
+        </div>
+        <div id='rectangle26' class='rectangle26'>
+        </div>
+        <div id='rectangle44' class='rectangle44'>
+        </div>
+        <div id='rectangle24' class='rectangle24'>
+        </div>
+        <div id='주소찾기' class='주소찾기'>
+        주소찾기</div>
+        <div id='info1'>
+        고객이 온라인 쇼핑몰에서 상품 및 서비스를 신용카드로 진행하는 결제 서비스입니다.
+        카드번호 유효기간 등의 신용정보는 안전하게 암호화되어 해당 신용카드사로 전달됩니다.</div>
+        <div id='결제정보' class='결제정보'>
+        결제정보</div>
+        <div id='주문금액' class='주문금액'>
+        주문 금액</div>
+        <div id='총결제예정금액' class='총결제예정금액'>
+        총  결제 예정금액</div>
+        <div id='money1' class='money1'>
+        9,000</div>
+        <div id='원' class='원'>
+        원</div>
+        <div id='group3' class='group3'>
+        <div id='money2' class='money2'>
+        6,000</div>
+        <div id='원2' class='원2'>
+        원</div>
+        </div>
+        <div id='won3' class='won3'>
+        3,000</div>
+        
+        <div id='won5' class='won5'>3,000</div>
+        <div id='won4' class='won4'>
+        원</div>
+        <div id='원4' class='원4'>
+        원</div>
+        <div id='배송비' class='배송비'>
+        배송비</div>
+        <div id='총할인금액' class='총할인금액'>
+        총 할인금액</div>
+        <div id='line5' class='line5'>
+        </div>
+        <div id='rectangle45' class='rectangle45'>
+        </div>
+        <div id='총적립예정포인트' class='총적립예정포인트'>
+        총  적립 예정 포인트</div>
+        <div id='p4' class='p4'>
+        152P</div>
+        <div id='info2'>
+        주문할 상품의 상품명, 상품가격, 배송정보를 확인하였으며, 구매에 동의 하시겠습니까?(전자상거래법 제8조 제2항)</div>
+        <a href="index.html"><div id='결제하기' class='결제하기'>
+        결제하기</div></a>
+        <div id='신용카드결제' class='신용카드결제'>
+        신용카드 결제</div>
+        <div id='가상계좌결제' class='가상계좌결제'>
+        가상계좌 결제</div>
+        <div id='페이코' class='페이코'>
+        페이코</div>
+        <div id='페이코2' class='페이코2'>
+        페이코</div>
+        <div id='배송요청사항선택' class='배송요청사항선택'>
+        배송요청사항 선택</div>
+        <div id='엘페이' class='엘페이'>
+        엘페이</div>
+        <div id='toss' class='toss'>
+        TOSS</div>
+        <div id='카카오페이' class='카카오페이'>
+        카카오페이</div>
+        <div id='삼성페이' class='삼성페이'>
+        삼성페이</div>
+        <div id='쓱페이' class='쓱페이'>
+        쓱페이</div>
+        <div id='실시간계좌이체' class='실시간계좌이체'>
+        실시간 계좌이체</div>
+        <div id='휴대폰결제' class='휴대폰결제'>
+        휴대폰 결제</div>
+        <img id='polygon2' class='polygon2' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAALCAYAAABlNU3NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABL0lEQVR4Aa1Ty22DQBCdBcSZEijBLoEOkgriCITEKaQCJxWYXPmIpALSgUuIS6AEX0EC8saZlUgcg235ScOyO7Pvze7MqqIoXohoTT/4NAzjEdjTFSjL0un7foPflSy9Kv5CJMbADlJK7ZqmuY+iqKYLAHJ3GIYKtpClZ9/3E6UDILISEQdWt23rnSsi5FuYi+leyN8PCY8D0zRdmKa5vUSE91iWVWnyruu8MAx32m+Mg9mBGixxTTWmrm3bX3me350iZx8nJOSc0HJMfiTAQIFrCHgi4mCssiyL/8bxGvvmTnsk8I8I4VQb1Eh3GtdrzWsynbxKRRPgtpPi6c5IZDyciDuOE5lq60mBkUgCe/i1UakPWDz3ZmYFNFDQBIRP/A+xtyAIYro1+NXLyz8b3yxZoOKJyOrgAAAAAElFTkSuQmCC'/>
+        </img>
+        <div id='구매자주문동의' class='구매자주문동의'>
+        구매자 주문 동의</div>
+        <div id='info3'>
+        구매 전 꼭 확인해 주세요.
+        쿠폰, 포인트 사용 후 실결제금액 기준으로 사은품을 선택할 수 있습니다.
+        재고 여부에 따라 별도 연락없이 임의 변경되어 출고될 수 있습니다.
+        5만원 이상 구매 시, 3만원 이상 사은품과 5만원 이상 사은품을 함께 선택해 주셔야 합니다.
+        동일 상품으로 2개 선택 시 중복색상으로 발송될 수 있는 점 양해 부탁드립니다.
+        사은품 대신 포인트 적립 선택 시, 500포인트가 지급되며, 주문 취소 시 자동 회수됩니다.</div>
+        </div>
+</body>
+</html>

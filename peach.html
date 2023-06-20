@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUJUVELVET08</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+    * {
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    body{
+        margin: 0;
+    }
+    #top{
+        background-color: white;
+        height: 10vh;
+    }
+    #img{
+        background-color: white;
+        width: 70%;
+        height: 90vh;
+        float: left;
+        text-align: center;
+    }
+    #purchase{
+        background-color: #FFE8E1;
+        width: 30%;
+        float: right;
+        overflow: auto;
+        height: 90vh;
+    }
+    #purchase::-webkit-scrollbar {
+      width: 1vw;
+    }
+    #purchase::-webkit-scrollbar-thumb {
+      background-color: #ffb2a3;
+      border-radius: 10px;
+    }
+    #purchase::-webkit-scrollbar-track {
+      background-color: rgb(219, 219, 219);
+    }
+    h2{
+        font-weight: 400;
+        font-size: 150%;
+        margin: 5% 0 0 10%;
+    }
+    h1{
+        font-size: 200%;
+        margin: 5% 0 0 10%;
+    }
+    h3{
+        font-size: 100%;
+        font-weight: 400;
+        color: #6D6D6D;
+        margin: 2% 0 0 10%;
+    }
+    p{
+        margin: 2% 10% 0 10%;
+    }
+    #box{
+        background: linear-gradient(180deg, #FFCFC0 0%, #FFDAC0 100%);
+        border-radius: 1vw;
+        padding: 2% 0;
+        margin: 5% 10% 0 10%;
+    }
+    #btn{
+        background-color: #F99879;
+        color: white;
+        border-radius: 1vw;
+        text-align: center;
+        margin: 5% 10%;
+    }
+    #btn > h2{
+        font-size: 100%;
+        margin:0;
+        padding: 3% 0;
+        font-weight: 700;
+    }
+
+    
+li{
+  list-style-type: none;
+}
+
+#slideShow{
+  width: 70vw;
+  height: 80vh;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;   
+}
+
+
+.slides{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50vw;
+  transition: left 0.5s ease-out; 
+}
+
+.slides li:not(:last-child){
+  float: left;
+  margin-right: 150px;
+}
+
+.slides li{
+  float: left;
+}
+
+.controller span{
+  position:absolute;
+  background-color: transparent;
+  color: black;
+  text-align: center;
+  border-radius: 50%;
+  padding: 1vw 2vw;
+  top: 50%;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+.slides li:first-child{
+  margin-left: -40px;
+}
+
+.controller span:hover{
+  background-color: rgba(255, 143, 143, 0.119);
+}
+
+.prev{
+  left: 2vw;
+}
+.prev:hover{
+  transform: translateX(-0.5vw);
+}
+
+.next{
+  right: 2vw;
+}
+.next:hover{
+  transform: translateX(0.5vw);
+}
+img {
+    height: 60vh;
+    margin: 10vh 0 0 30vw;
+}
+#logo{
+    height: 5vh;
+    margin: 0;
+    padding: 2.5vh 4vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+    }
+
+</style>
+<body>
+    <div id="top">
+        <a href="index.html"><img id="logo" src="img/logo.png"></a>
+    </div>
+    <div id="img">
+        <div id="slideShow">
+            <ul class="slides">
+              <li><img src="img/tint08.png"/></li>
+              <li><img src="img/tint08_1.png"/></li>
+            </ul>  
+            <p class="controller">
+                <span class="prev">&lang;</span>  
+                <span class="next">&rang;</span>
+              </p>
+            </div> 
+    </div>
+    <div id="purchase">
+        <h2>peripera</h2>
+        <h1>품절대란</h1>
+        <h3>#08 Sellout Red</h3>
+        <p>쟁여두지 않으면 후회할걸!
+          금세 품절대란 일으킬 선명한 체리레드</p>
+            <div id="box">
+                <p>Mood</p>
+                <p>#Peach #fruit #Cute</p>
+            </div>
+            <div id="box">
+                <p>사은품</p>
+                <p>그라데이션 립 브러쉬</p>
+                <p>그라데이션 립 브러쉬</p>
+                <p>그라데이션 립 브러쉬</p>
+                <p>그라데이션 립 브러쉬</p>
+                <p>그라데이션 립 브러쉬</p>
+                <p>그라데이션 립 브러쉬</p>
+            </div>
+            <a href="purchase.html">
+                <div id="btn"><h2>BUY</h2></div>
+            </a>
+    </div>
+</body>
+<script>
+    
+    const slides = document.querySelector('.slides'); 
+const slideImg = document.querySelectorAll('.slides li'); 
+let currentIdx = 0; 
+const slideCount = slideImg.length; 
+const prev = document.querySelector('.prev'); 
+const next = document.querySelector('.next'); 
+const slideWidth = 700; 
+const slideMargin = 100; 
+
+
+slides.style.width = (slideWidth + slideMargin) * slideCount + 'px';
+
+function moveSlide(num) {
+  slides.style.left = -num * 60 + 'vw';
+  currentIdx = num;
+}
+
+prev.addEventListener('click', function () {
+
+
+  if (currentIdx !== 0) moveSlide(currentIdx - 1);
+});
+
+next.addEventListener('click', function () {
+
+  if (currentIdx !== slideCount - 1) {
+    moveSlide(currentIdx + 1);
+  }
+});
+</script>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js" ></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>peripera</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+    * {
+        font-family: 'Noto Sans KR', sans-serif;
+        overflow: hidden;
+    }
+    body{
+        margin: 0;
+    }
+    
+    #top{
+        background-color: rgba(4, 189, 189, 0);
+        height: 10vh;
+    }
+    #back{
+        background: linear-gradient(180deg, #FFBDBD 0%, #FFFFFF 100%);
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+    }
+    #left{
+        width: 20vw;
+        height: 92vh;
+        position: absolute;
+    }
+    #right{
+        width: 20vw;
+        height: 92vh;
+        right: 0;
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+    .box{
+        width: 12vw;
+        margin: 2vh 0 0 2.5vw;
+    }
+    #color img, #mood img:hover{
+        box-shadow: 0px 0px 5px 5px #ffcece;
+        cursor: pointer;
+    }
+    #color{
+        position: absolute;
+        width: 20vw;
+        height: 92vh;
+        margin-top: 5vh;
+        overflow: visible;
+    }
+    #mood{
+        position: absolute;
+        width: 20vw;
+        height: 92vh;
+        margin-top: 5vh;
+        right: -2.5vw;
+        overflow: visible;
+    }
+    #tint{
+        position: absolute;
+        width: 20vw;
+        margin: 15vh 40vw;
+    }
+#logo{
+    height: 5vh;
+    margin: 0;
+    padding: 2.5vh 4vh;
+    position: absolute ;
+}
+</style>    
+<body>
+    <div id="back"></div>
+    
+    
+    <div id="top">
+        <a href="index.html"><img id="logo" src="img/logo.png"></a>
+    </div>
+    <img id="tint" src="img/tint.png">
+    <div id="wing_l">
+        <img src="img/left.png" id="left">
+        <div id="color">
+            <img id= "berry" class="box" src="img/berry.png">
+            <img id= "orange" class="box" src="img/orange.png">
+            <img id= "peach" class="box" src="img/peach.png">
+        </div>
+    </div>
+    <div id="wing_2">
+        <img src="img/right.png" id="right">
+        <div id="mood">
+            <img id= "sexy" class="box" src="img/sexy.png">
+            <img id= "pure" class="box" src="img/pure.png">
+            <img id= "cute" class="box" src="img/cute.png">
+        </div>
+    </div>
+</body>
+<script>
+    $( function() {
+        $( "#mood > img,#color>img" ).draggable({
+            revert: true
+        })
+
+        $( "#tint" ).droppable({
+            drop: function( event, ui ) {
+            let title = ui.draggable.attr("id");
+            setTimeout(function() {document.location.href=(title+".html")}, 0);
+      }
+    });
+})
+</script>
+</html>
